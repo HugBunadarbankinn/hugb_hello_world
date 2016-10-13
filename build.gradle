@@ -13,6 +13,12 @@ apply plugin: 'application'
 
 mainClassName = "com.bangsapabbi.helloworld.HelloWorld"
 
+jar {
+	manifest {
+		attributes("Main-Class": "com.bangsapabbi.helloworld.HelloWorld")
+	}
+}
+
 // In this section you declare where to find the dependencies of your project
 repositories {
     // Use 'jcenter' for resolving your dependencies.
